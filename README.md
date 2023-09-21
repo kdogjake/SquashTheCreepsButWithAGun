@@ -1,7 +1,7 @@
 # SquashTheCreepsButWithAGun
 The Godot 3D tutorial game but with a gun.
 
-Music from DOOM (1993)
+Music from DOOM (1993)\n
 Player Model, Enemy Model, and Icon from Godot
 Gun Model from Me
 
