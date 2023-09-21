@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://cakbaxb7ahd3n"]
+
+[ext_resource type="Script" path="res://death_particles.gd" id="1_0ic0y"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_hm2pp"]
+direction = Vector3(0, 1, 0)
+gravity = Vector3(0, -19.6, 0)
+initial_velocity_min = 5.0
+initial_velocity_max = 7.0
+scale_min = 0.5
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_35mow"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_twtyg"]
+material = SubResource("StandardMaterial3D_35mow")
+
+[node name="DeathParticles" type="GPUParticles3D"]
+emitting = false
+amount = 10
+lifetime = 0.5
+one_shot = true
+explosiveness = 1.0
+process_material = SubResource("ParticleProcessMaterial_hm2pp")
+draw_pass_1 = SubResource("SphereMesh_twtyg")
+script = ExtResource("1_0ic0y")
