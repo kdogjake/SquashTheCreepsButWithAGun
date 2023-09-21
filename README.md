@@ -7,7 +7,7 @@ Player Model, Enemy Model, and Icon from Godot
 
 Gun Model from Me
 
-Controls:
+# Controls:
 
 Move - WASD/Left Stick
 
